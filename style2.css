@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+*{
+    font-family:'Montaga';
+}
+body{
+    background-image:url(785492.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+}
+.container h1{
+    text-align: center;
+}
+.container1{
+    z-index: 2;
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.gap{
+    line-height: 26px;
+}
