@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+*{
+    font-family:'Montaga';
+}
+/*Service Section*/
+.services{
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 10rem 0rem;
+}
+.services .services-header{
+    width: 100%;
+    text-align: center;
+}
+.service-col{
+    display:flex;
+    flex-direction:column;
+}
+.services .services-header .services-header-heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+.services .services-header .services-header-desc{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+.services .services-info{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+.services .services-info .service{
+    width: 50%;
+    min-height: 300px;
+    position: relative;
+    transition: .3s ease transform;
+    margin: 5px;
+}
+.services .services-info .service .service-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style:preserve-3d;
+    transition: .3s ease transform;
+    display: inline-block;
+}
+.services .services-info .service .service-card .service-front,
+.services .services-info .service .service-card .service-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2, 255, 2, 0.301);
+    text-align: center;
+}
+.services .services-info .service .service-card .service-fronts,
+.services .services-info .service .service-card .service-backs{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 247, 41, 0.856);
+    text-align: center;
+}
+.services .services-info .service .service-card .service-frontss,
+.services .services-info .service .service-card .service-backss{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(247, 70, 57, 0.753);
+    text-align: center;
+}
+.services .services-info .service .service-card .service-back{
+    transform: rotateY(180deg);
+}
+ .services .services-info .service .service-card .service-front i{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.services .services-info .service .service-card .service-backs{
+    transform: rotateY(180deg);
+}
+ .services .services-info .service .service-card .service-fronts i{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.services .services-info .service .service-card .service-backss{
+    transform: rotateY(180deg);
+}
+ .services .services-info .service .service-card .service-frontss i{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.services .services-info .service .service-card .service-front .service-front-heading,
+    .services .services-info .service .service-card .service-back .service-back-heading{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.services .services-info .service:hover .service-card{
+    transform: rotateY(180deg);
+} 
+.services .services-info .service .service-card .service-back .service-back-desc{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front{
+    background-image: url(img-2.jpg);
+    background-size: cover;
+    position: relative;
+    color:white;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front::after{
+content:'';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0,0,0,0.274);
+z-index: -1;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front i{
+    color: white;
+} 
+/*Service Section*/
